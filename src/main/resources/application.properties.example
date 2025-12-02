@@ -1,6 +1,14 @@
+# Example Application Properties
+# Copy this file to application.properties and update values as needed
+# OR set the environment variables listed below
+
 spring.application.name=quizapp
 
 # = Database Configuration
+# Set these environment variables:
+#   DB_URL - JDBC URL for your database (optional, defaults to localhost)
+#   DB_USERNAME - Database username (required)
+#   DB_PASSWORD - Database password (required)
 spring.datasource.url=${DB_URL:jdbc:mysql://localhost:3306/questiondb}
 spring.datasource.username=${DB_USERNAME}
 spring.datasource.password=${DB_PASSWORD}
@@ -13,7 +21,3 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 # = Server Configuration
 server.port=8080
-
-
-
-

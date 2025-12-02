@@ -25,3 +25,30 @@ A backend REST API for a Quiz Application built using Spring Boot and MySQL. It 
 - Proper error handling with HTTP status codes
 
 ---
+
+## ⚙️ Configuration
+
+### Database Setup
+
+1. Create a MySQL database:
+   ```sql
+   CREATE DATABASE questiondb;
+   ```
+
+2. Set the required environment variables before running the application:
+   ```bash
+   export DB_USERNAME=your_username
+   export DB_PASSWORD=your_password
+   # Optional: override the default database URL
+   export DB_URL=jdbc:mysql://localhost:3306/questiondb
+   ```
+
+3. Alternatively, you can set these in your IDE's run configuration or create a local properties file.
+
+### Running the Application
+
+```bash
+./mvnw spring-boot:run
+```
+
+---
